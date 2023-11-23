@@ -37,8 +37,10 @@
 <section class="section">
     <div class="container is-fluid">
         <div class="notification is-primary">
-            This container is <strong>fluid</strong>: it will have a 32px gap on either side, on any
-            viewport size.
+            <strong>Salon samochodowy</strong>  Trzydziestoletnie doświadczenie na rynku oraz pasja do motoryzacji zapewniły firmie Plichta rzeszę zadowolonych i lojalnych klientów.
+            Wychodząc naprzeciw potrzebom, 21 października, swoje drzwi dla Klientów otworzył nowy punkt dealerski SEAT-a w Gdańsku.
+            W salonie Plichta miłośnicy dynamicznych aut wybiorą swojego nowego SEAT-a oraz skorzystają z usług serwisu.
+            To już drugi w Trójmieście i 23. autoryzowany punkt sprzedaży marki w Polsce.
         </div>
 
         <!-- Articles -->
@@ -48,6 +50,9 @@
                 <h4 class="title is-4">{{ art.title }}</h4>
                 <div class="content">
                     {{ art.content }}
+                    <figure class="image is-128x128">
+                        <img src="{{ art.imgThumb }}" alt="Obraz artykułu">
+                    </figure>
                 </div>
             </div>
         </div>
