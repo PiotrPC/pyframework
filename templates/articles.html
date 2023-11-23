@@ -8,7 +8,7 @@
     <title>{{ title_article_view }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-<body>
+<body class="has-background-success">
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
@@ -37,8 +37,10 @@
 <section class="section">
     <div class="container is-fluid">
         <div class="notification is-primary">
-            <strong>Salon samochodowy</strong>  Trzydziestoletnie doświadczenie na rynku oraz pasja do motoryzacji zapewniły firmie Plichta rzeszę zadowolonych i lojalnych klientów.
-            Wychodząc naprzeciw potrzebom, 21 października, swoje drzwi dla Klientów otworzył nowy punkt dealerski SEAT-a w Gdańsku.
+            <strong>Salon samochodowy</strong> Trzydziestoletnie doświadczenie na rynku oraz pasja do motoryzacji
+            zapewniły firmie Plichta rzeszę zadowolonych i lojalnych klientów.
+            Wychodząc naprzeciw potrzebom, 21 października, swoje drzwi dla Klientów otworzył nowy punkt dealerski
+            SEAT-a w Gdańsku.
             W salonie Plichta miłośnicy dynamicznych aut wybiorą swojego nowego SEAT-a oraz skorzystają z usług serwisu.
             To już drugi w Trójmieście i 23. autoryzowany punkt sprzedaży marki w Polsce.
         </div>
@@ -50,14 +52,17 @@
                 <h4 class="title is-4">{{ art.title }}</h4>
                 <div class="content">
                     {{ art.content }}
+                </div>
+                <div class="imgThumb">
                     <figure class="image is-128x128">
-                        <img src="{{ art.imgThumb }}" alt="Obraz artykułu">
+                        <img src="{{ art.imgThumb.url }}" alt="{{ art.title }}">
                     </figure>
                 </div>
             </div>
         </div>
         {% endfor %}
         <!-- End Articles -->
+
 
     </div>
 </section>
