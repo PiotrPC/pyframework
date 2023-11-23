@@ -5,9 +5,56 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>{{ title_article_view }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
 <body>
-<h2>Tutaj będą znajdowały się ifnormacje</h2>
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a herf="/artykuly/list/" class="navbar-item">
+                {{ title_article_view }}
+            </a>
+
+            <a herf="https://bulma.io/documentation/" target="_blank" class="navbar-item">
+                Dokumentacja BULMA
+            </a>
+        </div>
+    </div>
+</nav>
+<section class="section">
+    <div class="container is-fluid">
+        <div class="notification is-primary">
+            This container is <strong>fluid</strong>: it will have a 32px gap on either side, on any
+            viewport size.
+        </div>
+
+        <!-- Articles -->
+        {% for art in articles %}
+        <div class="card box">
+            <div class="card-content">
+                <h4 class="title is-4">{{ art.title }}</h4>
+                <div class="content">
+                    {{ art.content }}
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+        <!-- End Articles -->
+
+    </div>
+</section>
 </body>
 </html>
