@@ -1,0 +1,16 @@
+.notification {
+    border-radius: 10px; /* Zaokrąglenie rogów */
+    margin-bottom: 20px; /* Odstęp między powiadomieniami */
+}
+
+.regulation-list {
+    padding-left: 20px; /* Wcięcie dla punktów na liście */
+}
+
+.title {
+    margin-bottom: 20px; /* Odstęp między tytułem a treścią */
+}
+
+.has-text-centered {
+    text-align: center; /* Centrowanie tekstu */
+}

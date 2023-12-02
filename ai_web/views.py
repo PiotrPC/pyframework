@@ -15,3 +15,15 @@ def index(response):
                       "options": options,
                       "articles": articles
                   })
+def kontakt(response):
+    title_kon = "Kontakt"
+    return render(response, "kontakt.html",
+                  {
+                      "title_kon_view": title_kon,
+                  })
+def regulamin(response):
+    title_reg = "Regulamin"
+    return render(response, "regulamin.html",
+                  {
+                      "title_reg_view": title_reg,
+                  })

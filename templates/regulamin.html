@@ -1,0 +1,122 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>{{ title_reg_view }}</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+          integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body class="has-background-success" style="background-image: url('https://th.bing.com/th/id/OIG.dBvG.eGcrMQRhVzSloX5?pid=ImgGn'); background-size: cover; background-position: center;">
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+        <a class="navbar-item" href="https://bulma.io">
+            <img src="https://bulma.io/images/bulma-logo.png" width="112" height="28" alt="Stronka bulma">
+        </a>
+
+        <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarBasicExample">
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+            <span aria-hidden="true"></span>
+        </a>
+    </div>
+
+    <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+            <a href="/artykuly/Glowna/" class="navbar-item">
+                Strona główna
+            </a>
+            <a href="/artykuly/Kontakt/" class="navbar-item">
+                Kontakt
+            </a>
+            <a href="/artykuly/Regulamin/" class="navbar-item">
+                Regulamin
+            </a>
+
+            <a href="https://bulma.io/documentation/" target="_blank" class="navbar-item">
+                Informacje BULMA
+            </a>
+        </div>
+    </div>
+</nav>
+<section class="section" >
+    <div class="container is-fluid is-rounded">
+        <div class="notification is-primary is-info " style="border-radius: 50px; background-color: rgba(78, 41, 227, 0.8)">
+            <h2 class="title is-2 has-text-centered"><strong>Salon samochodowy</strong></h2> Trzydziestoletnie
+            doświadczenie na rynku oraz pasja do motoryzacji
+            zapewniły firmie Plichta rzeszę zadowolonych i lojalnych klientów.
+            Wychodząc naprzeciw potrzebom, 21 października, swoje drzwi dla Klientów otworzył nowy punkt dealerski
+            SEAT-a w Gdańsku.
+            W salonie Plichta miłośnicy dynamicznych aut wybiorą swojego nowego SEAT-a oraz skorzystają z usług serwisu.
+            To już drugi w Trójmieście i 23. autoryzowany punkt sprzedaży marki w Polsce.
+        </div>
+        <div class="notification is-danger" style="border-radius: 50px; background-color: rgba(210, 12, 12, 0.8)">
+            <h2 class="title is-2 has-text-centered">{{ title_reg_view }}</h2>
+            <div class="content">
+                <ol>
+                    <li>Klient zobowiązuje się do przestrzegania regulaminu salonu samochodowego.</li>
+                    <li>Zakazane jest testowanie pojazdów bez uprzedniego zgłoszenia i uzyskania zgody personelu.</li>
+                    <li>Każdy klient jest zobowiązany do przestrzegania zasad bezpieczeństwa obowiązujących na terenie
+                        salonu.
+                    </li>
+                    <li>Wprowadzanie i spożywanie alkoholu na terenie salonu jest surowo zabronione.</li>
+                    <li>Klienci zobowiązani są do zwracania uwagi na wszelkie sygnały ostrzegawcze i zalecenia
+                        obsługi.
+                    </li>
+                    <li>Niedopuszczalne jest palenie papierosów lub używanie innych substancji tytoniowych na terenie
+                        salonu.
+                    </li>
+                    <li>Klientom zabrania się używania urządzeń dźwiękowych bez słuchawek.</li>
+                    <li>W przypadku szkód wyrządzonych pojazdom, klient jest odpowiedzialny za pokrycie kosztów
+                        naprawy.
+                    </li>
+                    <li>Na terenie salonu obowiązuje zakaz łamania przepisów ruchu drogowego.</li>
+                    <li>Klient ma prawo do uzyskania jasnych informacji dotyczących cen i warunków zakupu pojazdów.</li>
+                    <li>Zakazane jest używanie telefonów komórkowych podczas jazdy testowej.</li>
+                    <li>Każdy klient ma obowiązek przestrzegania terminów umówionych wizyt i testów.</li>
+                    <li>W przypadku niewłaściwego zachowania, personel salonu ma prawo odmówić obsługi klienta.</li>
+                    <li>Zabronione jest wnoszenie i spożywanie jedzenia w pojazdach wystawowych.</li>
+                    <li>Klienci są zobowiązani do przestrzegania zasad kolejności oczekiwania na obsługę.</li>
+                    <li>Salon nie ponosi odpowiedzialności za pozostawione wartościowe przedmioty w samochodach.</li>
+                    <li>W przypadku wypadku podczas jazdy testowej, klient ponosi pełną odpowiedzialność
+                        prawno-finansową.
+                    </li>
+                    <li>Zakazane jest używanie niecenzuralnego języka i zachowań agresywnych wobec personelu i innych
+                        klientów.
+                    </li>
+                    <li>Klient zobowiązany jest do dostarczenia ważnego prawa jazdy przed przystąpieniem do jazdy
+                        testowej.
+                    </li>
+                    <li>W przypadku zauważenia usterek lub problemów technicznych podczas jazdy testowej, klient ma
+                        obowiązek natychmiast poinformować personel.
+                    </li>
+                    <li>Każdy klient ma prawo do uzyskania szczegółowych informacji na temat warunków gwarancji i
+                        serwisu pojazdu.
+                    </li>
+                    <li>Zakazane jest używanie aparatu fotograficznego bez zgody właściciela salonu.</li>
+                    <li>W przypadku stwierdzenia nieprawidłowości w dokumentacji pojazdu, klient ma prawo do odstąpienia
+                        od umowy.
+                    </li>
+                    <li>Salon zastrzega sobie prawo do zmiany cennika i warunków sprzedaży bez wcześniejszego
+                        powiadomienia.
+                    </li>
+                    <li>Wszelkie spory wynikłe z umowy sprzedaży rozstrzygane będą zgodnie z obowiązującym prawem.</li>
+                    <li>W salonie obowiązuje zakaz kopiowania i rozpowszechniania materiałów prezentowanych na terenie
+                        wystawy.
+                    </li>
+                    <li>Klient ma prawo do odstąpienia od umowy w terminie 14 dni od daty zakupu, zgodnie z
+                        obowiązującym prawem konsumenckim.
+                    </li>
+                    <li>Zakazane jest wprowadzanie zwierząt na teren salonu (za wyjątkiem psów przewodników).</li>
+                </ol>
+            </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
