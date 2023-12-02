@@ -1,16 +1,18 @@
-.notification {
-    border-radius: 10px; /* Zaokrąglenie rogów */
-    margin-bottom: 20px; /* Odstęp między powiadomieniami */
+
+.notification::-webkit-scrollbar {
+    width: 10px;
 }
 
-.regulation-list {
-    padding-left: 20px; /* Wcięcie dla punktów na liście */
+.notification::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Zaokrąglone krawędzie */
 }
 
-.title {
-    margin-bottom: 20px; /* Odstęp między tytułem a treścią */
+.notification::-webkit-scrollbar-thumb {
+    background-color: rgba(210, 12, 12, 0.8);
+    border-radius: 10px; /* Zaokrąglone krawędzie */
 }
 
-.has-text-centered {
-    text-align: center; /* Centrowanie tekstu */
+.notification::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(210, 12, 12, 1);
 }

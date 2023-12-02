@@ -1,17 +1,16 @@
 {% load static %}
-<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>{{ title_article_view }}</title>
+    <title>{{ title_kon_view }}</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
 </head>
-<body class="has-background-success">
+<body style="margin: 0; padding: 20px; height: 100vh; background-image: url('https://th.bing.com/th/id/OIG.VJBTv3WdKbWliv9tVhh0?pid=ImgGn'); background-size: cover; background-position: center;">
 <nav class="navbar" role="navigation" aria-label="main navigation">
     <div class="navbar-brand">
         <a class="navbar-item" href="https://bulma.io">
@@ -28,7 +27,7 @@
     <div id="navbarBasicExample" class="navbar-menu">
         <div class="navbar-start">
             <a href="/artykuly/Glowna/" class="navbar-item">
-               Strona główna
+                Strona główna
             </a>
             <a href="/artykuly/Kontakt/" class="navbar-item">
                 Kontakt
@@ -43,10 +42,11 @@
         </div>
     </div>
 </nav>
-<section class="section">
-    <div class="container is-fluid">
-        <div class="notification is-primary">
-            <strong>Salon samochodowy</strong> Trzydziestoletnie doświadczenie na rynku oraz pasja do motoryzacji
+<section class="section" >
+    <div class="container is-fluid is-rounded">
+        <div class="notification is-primary is-info " style="border-radius: 50px; background-color: rgba(78, 41, 227, 0.8)">
+            <h2 class="title is-2 has-text-centered"><strong>Salon samochodowy</strong></h2> Trzydziestoletnie
+            doświadczenie na rynku oraz pasja do motoryzacji
             zapewniły firmie Plichta rzeszę zadowolonych i lojalnych klientów.
             Wychodząc naprzeciw potrzebom, 21 października, swoje drzwi dla Klientów otworzył nowy punkt dealerski
             SEAT-a w Gdańsku.
@@ -54,25 +54,17 @@
             To już drugi w Trójmieście i 23. autoryzowany punkt sprzedaży marki w Polsce.
         </div>
 
-        <!-- Articles -->
-        {% for art in articles %}
-        <div class="card box">
-            <div class="card-content">
-                <h4 class="title is-4">{{ art.title }}</h4>
-                <div class="content">
-                    {{ art.content }}
-                </div>
-                <div class="imgThumb">
-                    <figure class="image is-128x128">
-                        <img src="/images/{{ art.imgThumb }}" alt="{{ art.title }}">
-                    </figure>
-                </div>
+
+        <div class="notification is-danger has-text-centered"
+             style="border-radius: 50px; background-color: rgba(210, 12, 12, 0.8)">
+            <h2 class="title is-2">{{ title_kon_view }}</h2>
+            <div class="content">
+                <p><strong>Adres:</strong> ul. Przykładowa 123, 00-000 Warszawa</p>
+                <p><strong>Telefon:</strong> +48 123 456 789</p>
+                <p><strong>Email:</strong> kontakt@example.com</p>
+                <p><strong>Godziny otwarcia:</strong> Pon-Pt: 9:00 - 17:00, Sob: 10:00 - 14:00</p>
             </div>
         </div>
-        {% endfor %}
-        <!-- End Articles -->
-
-
     </div>
 </section>
 </body>
