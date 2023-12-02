@@ -1,5 +1,4 @@
 {% load static %}
-<!doctype html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -42,37 +41,38 @@
         </div>
     </div>
 </nav>
+
 <section class="section">
     <div class="container is-fluid">
         <div class="notification is-primary is-info " style="border-radius: 50px; background-color: rgba(78, 41, 227, 0.8)">
-            <h2 class="title is-2 has-text-centered"><strong>Salon samochodowy</strong></h2> Trzydziestoletnie
-            doświadczenie na rynku oraz pasja do motoryzacji
-            zapewniły firmie Plichta rzeszę zadowolonych i lojalnych klientów.
+            <h2 class="title is-2 has-text-centered"><strong>Salon samochodowy</strong></h2>
+            Trzydziestoletnie doświadczenie na rynku oraz pasja do motoryzacji
+            zapewniły firmie Olgda rzeszę zadowolonych i lojalnych klientów.
             Wychodząc naprzeciw potrzebom, 21 października, swoje drzwi dla Klientów otworzył nowy punkt dealerski
             SEAT-a w Gdańsku.
             W salonie Plichta miłośnicy dynamicznych aut wybiorą swojego nowego SEAT-a oraz skorzystają z usług serwisu.
             To już drugi w Trójmieście i 23. autoryzowany punkt sprzedaży marki w Polsce.
         </div>
-
-        <!-- Articles -->
         {% for art in articles %}
-        <div class="card box">
-            <div class="card-content">
-                <h4 class="title is-4">{{ art.title }}</h4>
-                <div class="content">
-                    {{ art.content }}
+        <div class="card box" style="border-radius: 50px; background-color: rgba(6,6,9,0.8)">
+            <div class="media-content">
+                <p class="title is-4 has-text-centered has-text-white">{{ art.title }}</p>
+            </div>
+            <div class="media">
+                <div class="card-content centered">
+                    <div class="content is-size-4 is-italic has-text-weight-semibold has-text-white has-text-centered ">
+                        {{ art.content }}
+                    </div>
                 </div>
-                <div class="imgThumb">
-                    <figure class="image is-128x128">
-                        <img src="/images/{{ art.imgThumb }}" alt="{{ art.title }}">
+                <div class="media-right">
+                    <figure class="image">
+                        <iframe width="248" height="248" src="/images/{{ art.imgThumb }}" style="border-radius: 50px;" frameborder="1"></iframe>
+<!--                        <img src="/images/{{ art.imgThumb }}" alt="{{ art.title }}">-->
                     </figure>
                 </div>
             </div>
         </div>
         {% endfor %}
-        <!-- End Articles -->
-
-
     </div>
 </section>
 </body>

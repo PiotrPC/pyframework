@@ -2,7 +2,7 @@ from django.db import models
 
 
 class Article(models.Model):
-    title = models.CharField(max_length=250)  # Pole tytuł
+    title = models.CharField(max_length=250)
     content = models.TextField(default='')
     year = models.PositiveSmallIntegerField(default=2023)
     imgThumb = models.ImageField(upload_to="images", null=True, blank=True)
